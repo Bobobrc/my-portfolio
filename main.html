@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-full">
+    <nav class="flex bg-black text-white justify-between items-center py-2 sm:px-5 px-3">
+      <div class="flex flex-1">
+        <img class="max-w-[40%] sm:max-w-[25%] lg:max-w-[20%]" src="images/main/mp.png"/>
+      </div>
+      <div class="flex-1 text-center font-bold sm:text-xl text-xs"
+        data-en="Welcome to my Portfolio"
+        data-ro="Explorați portofoliul meu"
+        >
+        Welcome to my Portfolio
+      </div>
+      <div class="flex flex-1 sm:gap-4 gap-2 justify-end">
+        <a class="sm:text-2xl text-xs hover:text-gray-500" href="https://github.com/Bobobrc" target="_blank">
+          <i class="bi bi-github"></i>
+        </a>
+        <a class="sm:text-2xl text-xs hover:text-gray-500" href="https://www.linkedin.com/in/bogdan-cioata-164527220/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a class="sm:text-2xl text-xs hover:text-gray-500" href="https://discordapp.com/users/217031276631162881" target="_blank">
+          <i class="bi bi-discord"></i>
+        </a>
+      </div>
+    </nav>
+    <section class="relative max-w-5xl mx-auto my-5 xl:text-xl px-2">
+      <div class="flex gap-2 justify-center mb-3">
+        <button id="btn-en" onclick="setLanguage('en')" class="px-2 py-1 border-2 border-gray-600 rounded bg-blue-500 text-white">EN</button>
+        <button id="btn-ro" onclick="setLanguage('ro')" class="px-2 py-1 border-2 border-gray-600 rounded bg-gray-200">RO</button>
+      </div>
+      <div class="flex items-center mb-3 md:mb-1">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="px-3 text-gray-600 font-semibold"
+          data-en="PRESENT"
+          data-ro="PREZENT"
+        >
+          PRESENT
+        </span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="md:flex md:flex-row gap-x-6 items-center">
+        <div class="flex-1 flex gap-x-1">
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="OLD"
+              data-ro="VECHI"
+            >
+              OLD
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/old.png" />
+          </div>
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="NEW"
+              data-ro="NOU"
+            >
+              NEW
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/new.png" />
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col">
+          <p class="font-semibold mb-2 hidden md:block invisible">SPACER</p>
+          <div class="border border-black rounded-lg shadow-lg p-2 text-center">
+            <p class="font-semibold"
+              data-en="MyPortfolio"
+              data-ro="Portofoliul meu"
+            >
+              MyPortfolio
+            </p>
+            <p class="text-gray-700 text-sm">TailWind</p>
+            <p class="text-gray-600"
+              data-en="Refactored my portfolio using Tailwind to modernize styling and enhance layout flexibility."
+              data-ro="Am refăcut portofoliul folosind Tailwind pentru a-l moderniza și a-i oferi un aspect modern și flexibil."
+            >
+              Refactored my portfolio using Tailwind to modernize styling and enhance layout flexibility.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-t border-gray-300 my-2 md:my-6">
+      <div class="md:flex md:flex-row gap-x-6 items-center">
+        <div class="flex-1 flex">
+            <img class="hidden md:block w-1/5 rounded-lg shadow-lg border border-black" src="images/main/ds_profile.jpg" />
+            <img class="hidden md:block w-1/5 rounded-lg shadow-lg border border-black" src="images/main/ds_main_list.jpg" />
+            <img class="hidden md:block w-1/5 rounded-lg shadow-lg border border-black" src="images/main/ds_main_grid.jpg" />
+            <img class="hidden md:block w-1/5 rounded-lg shadow-lg border border-black" src="images/main/ds_communities.jpg" />
+            <img class="hidden md:block w-1/5 rounded-lg shadow-lg border border-black" src="images/main/ds_community.jpg" />
+        </div>
+        <div class="flex-1 md:w-5/12 text-center border border-black rounded-lg shadow-lg mx-1 p-2">
+          <p class="font-semibold">DailySnapDemo</p>
+          <p class="text-gray-700 text-sm">React Native, NativeWind, JavaScript</p>
+          <p class="text-gray-600"
+            data-en="Created a demo version of DailySnap to bring my idea to life and explore React Native development. 
+          The full app is currently in progress. To try the demo, open the following link on your phone using Expo Go."
+            data-ro="Am creat o versiune demo a aplicației DailySnap pentru a-mi aduce ideea la viață și pentru a explora dezvoltarea în React Native. 
+          Aplicația completă este în lucru. Pentru a încerca demo-ul, deschide următorul link pe telefon folosind Expo Go.">
+          >
+            Created a demo version of DailySnap to bring my idea to life and explore React Native development. 
+          The full app is currently in progress. To try the demo, open the following link on your phone using <strong>Expo Go</strong>.<br>
+          </p>
+          <a href="https://expo.dev/preview/update?message=Demo+publish+for+presentation&updateRuntimeVersion=1.0.0&createdAt=2025-09-03T22%3A04%3A14.035Z&slug=exp&projectId=6858a0f1-0148-462a-a963-2aadae12b2ce&group=0162aaaa-b3ee-41d1-bb5b-002e98349c50" class="text-blue-700 hover:text-blue-500" target="_blank"
+            data-en="Try the demo"
+            data-ro="Încearcă demo-ul"
+          >
+            Try the demo
+          </a>
+        </div>
+      </div>
+      <hr class="border-t border-gray-300 my-2 md:mt-6 md:mb-2">
+      <div class="md:flex md:flex-row gap-x-6 items-center">
+        <div class="flex-1 flex flex-col">
+          <p class="font-semibold mb-2 hidden md:block invisible">SPACER</p>
+          <div class="text-center border border-black rounded-lg shadow-lg mx-1 p-2">
+            <p class="font-semibold"
+              data-en="Morse code game"
+              data-ro="Joc cu codul Morse"
+            >
+              Morse code
+            </p>
+            <p class="text-gray-700 text-sm">JavaScript & CSS</p>
+            <p class="text-gray-600"
+              data-en="Created a Morse game to sharpen my JavaScript skills while applying it to create an interactive learning experience."
+              data-ro="Am creat un joc cu codul Morse pentru a-mi întări cunoștințele de JavaScript într-un mod interactiv."
+            >
+              Created a Morse game to sharpen my JavaScript skills while applying it to create an interactive learning experience.
+            </p>
+            <p>
+              <a class="text-blue-700 hover:text-blue-500" href="morsecode_game.html"
+                data-en="Go to game!"
+                data-ro="Joacă!"
+              >
+                Go to game!
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="flex-1 flex gap-x-1">
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="LEARN"
+              data-ro="ÎNVATĂ"
+            >
+              LEARN
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/morse_learn.png" />
+          </div>
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="PLAY"
+              data-ro="JOACĂ"
+            >
+              PLAY
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/morse_play.png" />
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center my-3 md:mb-1">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="px-3 text-gray-600 font-semibold">2025</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="md:flex md:flex-row gap-x-6 items-center">
+        <div class="flex-1 flex flex-col">
+          <p class="font-semibold mb-2 hidden md:block invisible">SPACER</p>
+          <div class="text-center border border-black rounded-lg shadow-lg mx-1 p-2">
+            <p class="font-semibold"
+              data-en="NATO phonetic alphabet game"
+              data-ro="Joc cu alfabetul fonetic NATO">
+            >
+              NATO phonetic alphabet game
+            </p>
+            <p class="text-gray-700 text-sm">JavaScript & CSS</p>
+            <p class="text-gray-600"
+              data-en="Built this game as a way to learn JavaScript while creating something to help me practice the NATO phonetic alphabet."
+              data-ro="Am construit acest joc pentru a învăța JavaScript, creând ceva interactiv care să mă ajute să exersez alfabetul fonetic NATO."
+            >
+              Built this game as a way to learn JavaScript while creating something to help me practice the NATO phonetic alphabet.
+            </p>
+            <p>
+              <a class="text-blue-700 hover:text-blue-500" href="natoalph_game.html"
+                data-en="Go to game!"
+                data-ro="Joacă!"
+              >
+                Go to game!
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="flex-1 flex gap-x-1">
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="LEARN"
+              data-ro="ÎNVATĂ"
+            >
+              LEARN
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/nato_learn.png" />
+          </div>
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="PLAY"
+              data-ro="JOACĂ"
+            >
+              PLAY
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/nato_play.png" />
+          </div>
+        </div>
+      </div>
+      <hr class="border-t border-gray-300 my-2 md:my-6">
+      <div class="md:flex md:flex-row gap-x-6 items-center">
+        <div class="flex-1 flex">
+          <img class="hidden md:block rounded-lg shadow-lg border border-black" src="images/main/old.png" />
+        </div>
+        <div class="md:w-1/2 text-center border border-black rounded-lg shadow-lg mx-1 p-2">
+          <p class="font-semibold"
+            data-en="MyPortfolio"
+            data-ro="Portofoliul meu"
+          >
+            MyPortfolio
+          </p>
+          <p class="text-gray-700 text-sm">CSS</p>
+          <p class="text-gray-600"
+            data-en="Built this portfolio site to organize and showcase my projects and websites."
+            data-ro="Am construit acest portofoliu pentru a-mi organiza și a-mi prezenta proiectele și site-urile."
+          >
+            Built this portfolio site to organize and showcase my projects and websites.
+          </p>
+        </div>
+      </div>
+      <hr class="border-t border-gray-300 my-2 md:mt-6 md:mb-2">
+      <div class="md:flex md:flex-row gap-x-6 items-center">
+        <div class="flex-1 flex gap-x-1">
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="HOME"
+              data-ro="ACASĂ"
+            >
+              HOME
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/lof_home.png" />
+          </div>
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="LEADERBOARD"
+              data-ro="CLASAMENT"
+            >
+              LEADERBOARD
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/lof_leaderboard.png" />
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col">
+          <p class="font-semibold mb-2 hidden md:block invisible">SPACER</p>
+          <div class="text-center border border-black rounded-lg shadow-lg mx-1 p-2">
+            <p class="font-semibold">LeagueOFriends</p>
+            <p class="text-gray-700 text-sm">Python, Django & CSS</p>
+            <p class="text-gray-600"
+              data-en="Built a Django web app using the Riot Games API that displays a custom leaderboard based on accounts added by the user, practicing backend development and web integration."
+              data-ro="Am construit o aplicație web cu Django, folosind API-ul Riot Games, care afișează un clasament personalizat bazat pe conturile adăugate de utilizator, punând în practică dezvoltarea backend și integrarea web."
+            >
+              Built a Django web app using the Riot Games API that displays a custom leaderboard based on accounts added by the user, practicing backend development and web integration.
+            </p>
+            <p>
+              <a class="text-blue-700 hover:text-blue-500" href="/"
+                data-en="Visit site!"
+                data-ro="Vizitează site-ul!"
+              >
+                Visit site!
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center my-3 md:mb-1">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="px-3 text-gray-600 font-semibold">2024</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="flex justify-center">
+        <div class="md:w-1/2 text-center border border-black rounded-lg shadow-lg my-3 mx-1 p-2">
+          <p class="font-semibold">LeagueOFriendsBOT</p>
+          <p class="text-gray-700 text-sm">Python & SQLite</p>
+          <p class="text-gray-500"
+            data-en="Built a Discord bot using the Riot Games API to track and display a leaderboard among friends, practicing API integration and Python development."
+            data-ro="Am construit un bot pentru Discord, folosind API-ul Riot Games, care urmărește și afișează un clasament între prieteni, punând în practică integrarea API-ului și dezvoltarea în Python."
+          >Built a Discord bot using the Riot Games API to track and display a leaderboard among friends, practicing API integration and Python development.
+          </p>
+          <p>
+            <a class="text-blue-700 hover:text-blue-500" href="https://github.com/Bobobrc/LeagueOFriendsBOT" target="_blank"
+            data-en="View on GitHub!"
+            data-ro="Vizualizează pe GitHub!"
+            >
+              View on GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center md:mt-4">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="px-3 text-gray-600 font-semibold">2023</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="md:flex md:flex-row gap-x-6 items-center">
+        <div class="flex-1 flex gap-x-1">
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="MAIN"
+              data-ro="PRINCIPAL"
+            >
+              MAIN
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/create.png" />
+          </div>
+          <div class="flex-1 text-center">
+            <p class="hidden md:block font-semibold mb-2"
+              data-en="LIST"
+              data-ro="LISTA"
+            >
+              LIST
+            </p>
+            <img class="hidden md:block w-full rounded-lg shadow-lg border border-black" src="images/main/list.png" />
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col">
+          <p class="font-semibold mb-2 hidden md:block invisible">SPACER</p>
+          <div class="text-center border border-black rounded-lg shadow-lg mx-1 p-2">
+            <p class="font-semibold">MyToDoApp</p>
+            <p class="text-gray-700 text-sm">Python, Django & CSS</p>
+            <p class="text-gray-500"
+              data-en="A to-do list app that helps you organize tasks and set priorities."
+              data-ro="O aplicație pentru lista de sarcini, care te ajută să-ți organizezi task-urile si să stabilești priorități."
+            >
+             A to-do list app that helps you organize tasks and set priorities.
+            </p>
+            <p>
+              <a class="text-blue-700 hover:text-blue-500" href="https://github.com/Bobobrc/MyToDoApp" target="_blank"
+              data-en="View on GitHub!"
+              data-ro="Vizualizează pe GitHub!"
+              >
+                View on GitHub
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center md:mt-4">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="px-3 text-gray-600 font-semibold">2022</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="flex justify-center">
+        <div class="md:w-1/2 text-center border border-black rounded-lg shadow-lg my-3 mx-1 p-2">
+          <p class="font-semibold"
+          data-en="Python Development"
+          data-ro="Python Development"
+        >
+          Python Development
+        </p>
+        <p class="text-gray-600"
+          data-en="Completed my first accredited Python Development course at Școala Informală de IT. Over 16 weeks, I advanced from Python basics and OOP to web development fundamentals and Django."
+          data-ro="Am finalizat primul meu curs acreditat de Python Development la Școala Informală de IT. Pe parcursul a 16 săptămâni, am avansat de la elementele de bază ale Python și programarea orientată pe obiecte până la fundamentele dezvoltării web și Django."
+        >
+          Completed my first accredited Python Development course at Școala Informală de IT. Over 16 weeks, I advanced from Python basics and OOP to web development fundamentals and Django.
+        </p>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="px-3 text-gray-600 font-semibold">2021</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

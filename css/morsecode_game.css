@@ -1,0 +1,82 @@
+.page_title {
+  text-align: center;
+  margin-top: 1rem;
+}
+.description {
+  text-align: center;
+  margin-top: 1rem;
+}
+.buttonPlayLearn {
+  display: flex;
+  justify-content: center;
+}
+#playBtn,
+#learnBtn {
+  width: 125px;
+  margin: 0px 5px 5px 5px;
+}
+#learnBtn {
+  color: black;
+  background-color: orange;
+}
+.learnGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  border: 3px outset black;
+  border-radius: 15px;
+  margin: 25px;
+  padding: 10px;
+  font-size: 1.25rem;
+}
+.numbers {
+  border: 3px outset black;
+  border-radius: 15px;
+  margin: 25px;
+  padding: 10px;
+  font-size: 1.25rem;
+}
+.go_back {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 0px;
+}
+.playContainer {
+  text-align: center;
+}
+.playGame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#score {
+  font-size: 50px;
+}
+#elementPlay {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+#userInput {
+  font-size: 20px;
+  border-radius: 5px;
+  width: 22ch;
+}
+#submitBtn,
+#resetBtn {
+  border: 1px solid black;
+}
+
+@media(max-width:600px){
+  .learnGrid{
+    display: flex;
+    flex-direction: column;
+  }
+}
