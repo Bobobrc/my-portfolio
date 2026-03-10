@@ -74,6 +74,7 @@ function learn() {
 
 learnBtn.addEventListener("click", learn)
 playBtn.addEventListener("click", play)
+document.getElementById("submitBtn").addEventListener("click", check)
 
 document.querySelectorAll(".userInput").forEach((input) => {
   input.addEventListener("keypress", function (event) {
